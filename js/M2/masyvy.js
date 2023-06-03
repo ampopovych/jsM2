@@ -34,7 +34,7 @@
 // console.log(b);
 
 // Цикли For 34:37
-const family = ['Andriy', `Viktoria`, "Anna-Sofia", 'Viktor', 'Anna', `Myron`, "Marianna"];
+// const family = ['Andriy', `Viktoria`, "Anna-Sofia", 'Viktor', 'Anna', `Myron`, "Marianna"];
 // console.table(family);
 // const lastIndex = family.length - 1;
 // for (let i = 0; i <= lastIndex; i += 1) {
@@ -86,8 +86,8 @@ const family = ['Andriy', `Viktoria`, "Anna-Sofia", 'Viktor', 'Anna', `Myron`, "
 // 5 Якщо є значення після коми, то повертаємося на початок циклу.
 // 6 Виводимо суму за межами масиву
 
-const kupivli = [25, 36, 47, 698, 25, 145, 24, 65, 96, 86, 356,];
-let sumaParnych = 0;
+// const kupivli = [25, 36, 47, 698, 25, 145, 24, 65, 96, 86, 356,];
+// let sumaParnych = 0;
 // for (let i = 0; i < kupivli.length; i += 1) {
 // Через індекс
     // kupivli[i] % 2 === 0 ? sumaParnych += kupivli[i] : '';
@@ -101,11 +101,25 @@ let sumaParnych = 0;
 
 
 // Перевірка, якщо ні
-for (const number of kupivli) {
-    if (number % 2 !== 0) {
-        continue
-    } else {
-        console.table(`Parne chyslo ${sumaParnych += number}`);
-    }
-}
-console.log(sumaParnych);
+// for (const number of kupivli) {
+//     if (number % 2 !== 0) {
+//         continue
+//     } else {
+//         console.table(`Parne chyslo ${sumaParnych += number}`);
+//     }
+// }
+// console.log(sumaParnych);
+
+// 1:41 повертається до масивів   slice команда
+const family = ['Andriy', `Viktoria`, "Anna-Sofia", 'Viktor', 'Anna', `Myron`, "Marianna"];
+// let sumaElementiv = '';
+// for (const member of family) {
+//     sumaElementiv += member+`,`;
+// }
+
+// console.log(sumaElementiv.slice(0, sumaElementiv.length - 1));
+// console.log(sumaElementiv);
+
+// Метрод join - склеює всі елементи масиву
+const sumaElementiv = family.join("¬+-");
+console.log(sumaElementiv);
