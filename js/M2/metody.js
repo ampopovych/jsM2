@@ -1,4 +1,4 @@
-// // Метрод join - склеює всі елементи масиву
+// Метрод join - склеює всі елементи масиву
 // const sumaElementiv = family.join("¬+-");
 // console.log(sumaElementiv);
 
@@ -6,25 +6,25 @@
 // Завдання перебрати символи і поменяти регістр на протилежний 1:49
 // const string = 'JavaScript';
 
-// // Метод split варіант 1
+// Метод split варіант 1
 // const letters = string.split('');
 // let invertString ='';
 // console.log(letters);
 // for (const letter of letters) {
 //     console.log(letter);
 //     if (letter === letter.toLowerCase()) {
-//         // console.log(`${letter} це буква нижнього реєстру`);
+        // console.log(`${letter} це буква нижнього реєстру`);
 //         invertString += letter.toUpperCase();
 
 //     } else {
-//         // console.log(`${letter} це буква верхнього реєстру`);
+        // console.log(`${letter} це буква верхнього реєстру`);
 //         invertString += letter.toLowerCase();
 //     }
 // }
 // console.log(invertString);
 
 
-// // Метод split варіант 2
+// Метод split варіант 2
 // const letters = string.split('');
 // let invertString ='';
 // console.log(letters);
@@ -32,54 +32,54 @@
 //     console.log(letter);
 //     letter === letter.toLowerCase()
 //         ?
-//         // console.log(`${letter} це буква нижнього реєстру`);
+        // console.log(`${letter} це буква нижнього реєстру`);
 //         invertString += letter.toUpperCase()
 //         :
-//         // console.log(`${letter} це буква верхнього реєстру`);
+        // console.log(`${letter} це буква верхнього реєстру`);
 //         invertString += letter.toLowerCase()
     
 // }
 // console.log(invertString);
 
 
-// // Метод split варіант 3
+// Метод split варіант 3
 // const letters = string.split('');
 // let invertString ='';
-// // console.log(letters);
+// console.log(letters);
 // for (const letter of letters) {
    
 //     invertString +=
 //     letter === letter.toLowerCase()
         // ?
-//         // console.log(`${letter} це буква нижнього реєстру`);
+        // console.log(`${letter} це буква нижнього реєстру`);
 //          letter.toUpperCase()
 //         :
-//         // console.log(`${letter} це буква верхнього реєстру`);
+        // console.log(`${letter} це буква верхнього реєстру`);
 //         letter.toLowerCase()
     
 // }
 // console.log(invertString);
 
 //  Метод split Задача. Заголовок тексту перевести в нижній реєстр і з'єднати слова дифісами
-// const zaholovok = `Даний заголовок містить 6 слів`;
-// console.log(zaholovok);
-// const normZaholovok = zaholovok.toLowerCase();
-// console.log(normZaholovok);
+const zaholovok = `Даний заголовок містить 6 слів`;
+console.log(zaholovok);
+const normZaholovok = zaholovok.toLowerCase();
+console.log(normZaholovok);
 
-// let words = normZaholovok.split('');
-// // console.log(words);
-// // console.log(' лапки без пробілу');
-// words = normZaholovok.split(' ');
-// console.log(words);
-// console.log(' лапки з 1 пробілом');
-// // words = normZaholovok.split('  ');
-// // console.log(words);
-// // console.log(' лапки з 2 пробілами');
-// // words = normZaholovok.split('   ');
-// // console.log(words);
-// // console.log(' лапки з 3 пробілами');
-// const zjednText = words.join('-');
-// console.log(zjednText);
+let words = normZaholovok.split('');
+console.log(words);
+console.log(' лапки без пробілу');
+words = normZaholovok.split(' ');
+console.log(words);
+console.log(' лапки з 1 пробілом');
+words = normZaholovok.split('  ');
+console.log(words);
+console.log(' лапки з 2 пробілами');
+words = normZaholovok.split('   ');
+console.log(words);
+console.log(' лапки з 3 пробілами');
+const zjednText = words.join('-');
+console.log(zjednText);
 
 
 // Короткий варіант
@@ -112,14 +112,14 @@
 // Метод splice
 // Метод деструктивний 
 // 
-const checkList = [
-    'check-1',
-    'check-2',
-    'check-3',
-    'check-4',
-    'check-5',
-    'check-6'
-]
+// const checkList = [
+//     'check-1',
+//     'check-2',
+//     'check-3',
+//     'check-4',
+//     'check-5',
+//     'check-6'
+// ]
 // Вмдалення елемента
 // console.table(checkList);
 // const checkToRemove = 'check-4';
@@ -134,10 +134,10 @@ const checkList = [
 // checkList.splice(2, 3);
 // console.table(checkList);
 // checkList.splice(3, 0, 'check-7', 'check-8', 'check-9');
-console.table(checkList);
+// console.table(checkList);
 // ЗАміна елемента
-checkList.splice(2, 2, 45, 4545, 6565)
-console.table(checkList);
+// checkList.splice(2, 2, 45, 4545, 6565)
+// console.table(checkList);
 // checkList.splice(2, 3);
 // console.table(checkList);
 // checkList.splice(3, 0, 'check-7', 'check-8', 'check-9');
